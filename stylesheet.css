@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+:root {
+    --color-lila: #6930C3;
+}
+
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    width: 100%;
+    /*WARNING*/
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* grid-template-rows: 150px calc(100vh - 150px) 90vh 20vh; */
+}
+
+
+
+/* COMIENZO DEL HEADER */
+.contenedor-header {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    height: 150px;
+    background-color: var(--color-lila);
+    align-items: center;
+    position: sticky;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+
+.contenedor-lista {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    max-width: 1400px;
+    padding-left: 70px;
+
+}
+
+.contenedor-lista a {
+    font-weight: 500;
+    font-size: 1.1em;
+    /* letter-spacing: 1.1px; */
+
+    text-decoration: none;
+    color: #ffffff;
+    /* padding: 0px 3 0px; */
+}
+
+.contenedor-lista a:hover {
+    border-bottom: 1px solid white;
+}
+
+
+.contenedor-lista li {
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.contenedor-iconos {
+    display: flex;
+    width: 35%;
+    justify-content: right;
+}
+
+.contenedor-iconos img {
+    height: 60px;
+    padding-right: 45px;
+}
+
+/* FIN HEADER */
+
+/* COMIENZO MAIN */
+.main-index {
+    height: calc(100vh - 150px);
+    width: 100%;
+    background-color: black;
+}
+
+
+
+.contenedor-imagenes div img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 150px);
+    filter: blur(4px);
+    position: sticky;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    filter: blur(.4px);
+}
+
+.contenedor-textos {
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.contenedor-textos h1 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.contenedor-textos p {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 5px 40px;
+    margin: 5px 60px;
+}
+
+/* COMIENZO SEGUNDA SECCION OFERTAS */
+.section2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #6930C3;
+    align-items: center;
+}
+
+.titulo-seccion {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.ofertas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 65vh;
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    width: 23%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.096);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.27);
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagen-card {
+    width: 100%;
+    height: 50%;
+}
+
+.imagen-card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.textos-card {
+    text-align: center;
+}
+
+.card button {
+    width: 60%;
+    height: 7%;
+    color: #ffffff;
+    background-color: var(--color-lila);
+    border-radius: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.418);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.452);
+    border-left: 2px solid rgba(0, 0, 0, 0.479);
+    border-right: 2px solid rgba(0, 0, 0, 0.411);
+    display: flex;
+    font-size: 1em;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* FIN OFERTAS */
+
+
+/* COMIENZO FOOTER */
+.footer {
+    display: flex;
+    height: 20vh;
+    width: 100;
+    background-color: var(--color-lila);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    bottom: 1px;
+}
+
+.iconos a {
+    padding: 40px;
+}
+
+
+
+
+
+
+/* ----------------------MEDIA QUERIES---------------------- */
+
+
+
+@media screen and (max-width: 1250px) {
+    .contenedor-iconos {
+        justify-content: left;
+        padding-left: 20px;
+    }
+
+    .section2 {
+        height: auto;
+    }
+
+    .ofertas {
+        flex-wrap: wrap;
+    }
+
+    .card-ofertas {
+        width: 60%;
+
+    }
+
+    .contenedor-lista {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-header {
+        flex-direction: column-reverse;
+    }
+
+    .contenedor-lista {
+        padding-top: 15px;
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contenedor-lista a {
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    .contenedor-iconos {
+        justify-content: center;
+        padding-left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .contenedor-iconos img {
+        height: 40px;
+        padding-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor-header {
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .contenedor-lista {
+
+        padding: 0;
+        width: 90%;
+        height: 100%;
+        /* align-items: center; */
+    }
+
+    .contenedor-iconos {
+        flex-direction: column;
+        width: 10%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .ofertas {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px 0px;
+    }
+
+    .imagen-card {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagen-card img {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .contenedor-header {
+        height: 230px;
+    }
+
+    .main-index {
+        height: calc(100vh - 230px);
+        width: 100%;
+        background-color: black;
+    }
+
+    .main-sobrenos {
+        height: calc(100vh - 230px);
+        width: 100%;
+        background-color: black;
+    }
+
+    .mapa{
+        width: 300px;
+    }
+    .contenedor-imagenes div img {
+
+        height: calc(100vh - 230px);
+    }
+
+    .contenedor-textos h1 {
+        font-size: 28px;
+    }
+
+    .contenedor-textos p {
+        font-size: 16px;
+        padding: 5px 0px;
+        margin: 5px 20px;
+    }
+
+    .iconos a {
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .mapa{
+        width: 250px;
+    }
+}
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+/* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
+
+
+.main-sobrenos {
+    height: calc(100vh - 150px);
+    background-color: black;
+}
+
+/* 
+.main-sobrenos .contenedor-imagenes div img {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 150px);
+    filter: blur(4px);
+    position: sticky;
+    background-color: black;
+} */
+
+.main-sobrenos section .section2 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contenedor-mapa {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+.contenedor-comentarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+}
+
+.contenedor-comentarios h3 {
+    text-align: center;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.contenedor-comentarios p {
+    padding: 0 30px;
+}
+
+/* ------------------PAGINA PRODUCTOS-------------------- */
+/* ------------------PAGINA PRODUCTOS-------------------- */
+/* ------------------PAGINA PRODUCTOS-------------------- */
+/* ------------------PAGINA PRODUCTOS-------------------- */
+/* ------------------PAGINA PRODUCTOS-------------------- */
+/* ------------------PAGINA PRODUCTOS-------------------- */
+/* ------------------PAGINA PRODUCTOS-------------------- */
+
+.section2-productos{
+    height: 200vh;
+}
+.section2-productos .titulo-seccion{
+    padding: 40px;
+    color: var(--color-lila);
+
+}
+
+.textos-card{
+    color: var(--color-lila);
+}
+
+.section2-productos .ofertas .card{
+    width: 26%;
+    padding: 20px;
+}
+
+.section2-productos .ofertas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card{
+    margin-top: 40px;
+}
+
+/* --------------MEDIA QUERIES PRODUCTOS------------- */
+
+@media screen and (max-width: 800px){
+    .section2-productos .ofertas .card{
+        width: 80%;
+    }
+
+    .section2-productos{
+    height: 450vh;
+}
+}
+
+
+
+/* ----------------------CONTACTO---------------------- */
+/* ----------------------CONTACTO---------------------- */
+/* ----------------------CONTACTO---------------------- */
+/* ----------------------CONTACTO---------------------- */
+/* ----------------------CONTACTO---------------------- */
+/* ----------------------CONTACTO---------------------- */
+/* ----------------------CONTACTO---------------------- */
+
+.main-contactanos{
+    height: calc(80vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    color: #6930C3;
+}
+.contenedor-form{
+    width: 50%;
+    height: 60%;
+}
+
+input[type= "text"] , input[type = "email"]{
+    width: 48%;
+    height: 40px;
+    margin: 10px 5px;
+    border: 1px solid white;
+    background-color: #6930C3;
+    padding: 15px;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    background-color: #6930C3;
+    color: #ffffff;
+    border: 1px solid white;
+    font-size: 15px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+textarea{
+    padding: 15px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid white;
+    background-color: #6930C3;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1200px ) {
+    .contenedor-form{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 990px ) {
+    .contenedor-form{
+        width: 75%;
+        height: 60%;
+    }
+    .main-contactanos p{
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 790px ) {
+    .contenedor-form{
+        width: 100%;
+        height: 60%;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 690px ) {
+    .contenedor-form form :nth-child(1){
+        width: 90%;
+        padding: 0;
+        margin: 0 20px;
+        margin-top: 10px;
+    }
+    .contenedor-form form :nth-child(2){
+        width: 90%;
+        padding: 0;
+        margin: 0 20px;
+        margin-top: 10px;
+    }
+    .contenedor-form form :nth-child(3){
+        width: 90%;
+        padding: 0;
+        margin: 0 20px;
+        margin-top: 10px;
+    }
+    .contenedor-form form :nth-child(4){
+        width: 90%;
+        padding: 0;
+        margin: 0 20px;
+        margin-top: 10px;
+    }
+    .main-contactanos p {
+        padding: 0 10;
+      }
+}
+
+
+
+
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+/* -----------------PREGUNTAS FRECUENTES---------------- */
+
+
+
+.contenedor-preguntas{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--color-lila);
+    text-align: center;
+}
+
+.preguntas{
+    width: 80%;
+    padding: 20px;
+    
+    box-shadow: 7px 0px 15px 1px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-preguntas{
+        height: auto;
+    }
+}
