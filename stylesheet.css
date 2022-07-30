@@ -426,7 +426,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-
+.titulo-productos h2{
+    padding-top: 60px;
+    font-weight: 700;
+    font-size: 30px;
+    border-bottom: 0.5px solid #6930C3;
+}
 .ofertas-productos{
     display: flex;
 
