@@ -414,7 +414,10 @@ body {
     .imagen-card img {
         width: 60%;
     }
-
+    .iconos ul{
+        padding-left: 0px;
+        margin-bottom: 0px;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -449,9 +452,6 @@ body {
         padding: 0px;
     }
 
-    .iconos a {
-        padding: 10px;
-    }
 }
 
 
@@ -498,6 +498,8 @@ body {
 .main-sobrenos section .section2 {
     height: 100vh;
     width: 100%;
+    background-color: #ffffff;
+    color: #6930C3;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -695,7 +697,7 @@ body {
 /* ----------------------CONTACTO---------------------- */
 
 .main-contactanos {
-    /* height: calc(80vh); */
+    height: calc(80vh);
     display: flex;
     justify-content: center;
     align-items: center;
