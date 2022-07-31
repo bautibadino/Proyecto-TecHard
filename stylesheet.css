@@ -31,7 +31,7 @@ body {
 }
 
 .nav-link {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .navbar-brand {
@@ -43,7 +43,7 @@ body {
 
 .nav-item {
     color: #6930C3;
-    font-size: 6rem;
+    /* font-size: 6rem; */
     display: inline-block;
     position: relative;
   }
@@ -491,7 +491,7 @@ body {
 }
 
 .card-productos {
-    width: 28%;
+    width: 23%;
     margin: 25px;
     display: flex;
     flex-direction: column;
@@ -500,9 +500,16 @@ body {
     border: .5px solid rgba(0, 0, 0, 0.226);
 }
 
+.imagen-card img{
+    border-bottom: .5px solid rgba(0, 0, 0, 0.226);
+}
+
 .textos-card h3 {
     font-size: 22px;
     font-weight: 700;
+}
+.textos-card p{
+    margin-bottom:0px;
 }
 
 
@@ -611,13 +618,22 @@ body {
 /* ----------------------CONTACTO---------------------- */
 
 .main-contactanos {
-    height: calc(80vh);
+    /* height: calc(80vh); */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 20px;
     color: #6930C3;
+}
+.main-contactanos h2{
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom:.5px solid #6930C3;
+}
+
+.main-contactanos p {
+    padding-top: 20px;
 }
 
 .contenedor-form {
