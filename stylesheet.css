@@ -183,7 +183,7 @@ body {
 /* COMIENZO FOOTER */
 .footer {
     display: flex;
-    height: 15vh;
+    height: 20vh;
     width: 100%;
     background: #212529;
     color: white;
@@ -451,6 +451,10 @@ body {
         margin: 20px 20px;
         padding: 0px;
     }
+    .items-comentarios iframe{
+        width: 300px;
+        height: 400px;
+    }
 
 }
 
@@ -458,6 +462,10 @@ body {
 @media screen and (max-width: 400px) {
     .mapa {
         width: 250px;
+    }
+    .items-comentarios iframe{
+        width: 280px;
+        height: 400px;
     }
 }
 
@@ -496,7 +504,7 @@ body {
 }
 
 .main-sobrenos section .section2 {
-    height: 100vh;
+    height: 150vh;
     width: 100%;
     background-color: #ffffff;
     color: #6930C3;
@@ -505,13 +513,15 @@ body {
     justify-content: space-around;
 }
 
+
 .contenedor-mapa {
     width: 100%;
+    overflow: hidden;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 
@@ -520,6 +530,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 35vh;
 }
@@ -697,7 +708,7 @@ body {
 /* ----------------------CONTACTO---------------------- */
 
 .main-contactanos {
-    height: calc(80vh);
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
