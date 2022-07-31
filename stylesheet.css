@@ -18,7 +18,7 @@ body {
     flex-direction: column;
 }
 
-.section1{
+.section1 {
     height: 100vh;
     overflow: hidden;
 }
@@ -26,18 +26,54 @@ body {
 
 
 /* COMIENZO DEL HEADER */
-.nav-item{
+.nav-item {
     padding: 20px;
 }
 
-.nav-link{
+.nav-link {
     font-size: 18px;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 30px;
     font-weight: 600;
 }
+
+
+
+.nav-item {
+    color: #6930C3;
+    font-size: 6rem;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .nav-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color:#6930C3;
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+  }
+  
+  .nav-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+
+
+
+
 /* FIN HEADER */
 
 /* COMIENZO MAIN */
@@ -132,7 +168,8 @@ body {
     align-items: center;
 
 }
-.card:hover{
+
+.card:hover {
     scale: 1.1;
 }
 
@@ -185,7 +222,7 @@ body {
     bottom: 0px;
 }
 
-.iconos a img{
+.iconos a img {
     padding: 40px;
 }
 
@@ -249,10 +286,12 @@ body {
         height: 40px;
         padding-right: 0;
     }
-    .section2{
+
+    .section2 {
         height: 80vh;
     }
-    .ofertas{
+
+    .ofertas {
         width: 95%;
     }
 }
@@ -317,9 +356,10 @@ body {
         background-color: black;
     }
 
-    .mapa{
+    .mapa {
         width: 300px;
     }
+
     .contenedor-imagenes div img {
 
         height: calc(100vh - 230px);
@@ -342,10 +382,11 @@ body {
 
 
 @media screen and (max-width: 400px) {
-    .mapa{
+    .mapa {
         width: 250px;
     }
 }
+
 /* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
 /* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
 /* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
@@ -415,7 +456,7 @@ body {
 /* ------------------PAGINA PRODUCTOS-------------------- */
 /* ------------------PAGINA PRODUCTOS-------------------- */
 /* ------------------PAGINA PRODUCTOS-------------------- */
-.section2-productos{
+.section2-productos {
     background-color: #ffffff;
 
     width: 100%;
@@ -426,32 +467,40 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-.titulo-productos h2{
+
+.titulo-productos h2 {
     padding-top: 60px;
     font-weight: 700;
     font-size: 30px;
     border-bottom: 0.5px solid #6930C3;
 }
-.ofertas-productos{
+
+.ofertas-productos {
     display: flex;
 
     flex-wrap: wrap;
     width: 80%;
     justify-content: center;
 }
-.card-productos{
+
+.card-productos {
     width: 28%;
     margin: 25px;
     display: flex;
     flex-direction: column;
-    box-shadow: -2px -3px 14px 2px rgba(0, 0, 0, 0.075);
+    box-shadow: -2px -3px 14px 2px rgba(0, 0, 0, 0.142);
     border-radius: 51px 7px 7px 7px;
+    border: .5px solid rgba(0, 0, 0, 0.226);
 }
 
-.textos-card h3{
+.textos-card h3 {
     font-size: 22px;
-    font-weight: 700 ;
+    font-weight: 700;
 }
+
+
+
+
 
 /* BOTON CARD */
 
@@ -461,7 +510,7 @@ body {
     background-color: #6930C3;
     border-radius: 4px;
     border-width: 0;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     box-sizing: border-box;
     color: #ffffff;
     cursor: pointer;
@@ -476,36 +525,36 @@ body {
     position: relative;
     text-align: left;
     text-decoration: none;
-    transition: box-shadow .15s,transform .15s;
+    transition: box-shadow .15s, transform .15s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
-    will-change: box-shadow,transform;
+    will-change: box-shadow, transform;
     font-size: 18px;
-  }
-  
-  .button-30:focus {
+}
+
+.button-30:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
-  }
-  
-  .button-30:hover {
+}
+
+.button-30:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
-  }
-  
-  .button-30:active {
+}
+
+.button-30:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
-  }
+}
 
-  .contenedor-boton{
+.contenedor-boton {
     border-top: 1px solid rgba(0, 0, 0, 0.137);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-  }
+}
 
 /* BOTON CARD FIN */
 
@@ -513,33 +562,35 @@ body {
 
 /* --------------MEDIA QUERIES PRODUCTOS------------- */
 
-@media screen and (max-width:1200px ) {
-    .ofertas-productos{
+@media screen and (max-width:1200px) {
+    .ofertas-productos {
         width: 90%;
     }
-    
+
 
 }
 
-@media screen and (max-width:900px ) {
-    .ofertas-productos{
+@media screen and (max-width:900px) {
+    .ofertas-productos {
         width: 100%;
     }
-    .card-productos{
+
+    .card-productos {
         width: 40%;
     }
 
 }
 
-@media screen and (max-width:500px ) {
-    .card-productos{
+@media screen and (max-width:500px) {
+    .card-productos {
         width: 80%;
     }
-    .textos-card h3{
+
+    .textos-card h3 {
         font-size: 18px;
-        font-weight: 700 ;
+        font-weight: 700;
     }
-    
+
 }
 
 
@@ -552,7 +603,7 @@ body {
 /* ----------------------CONTACTO---------------------- */
 /* ----------------------CONTACTO---------------------- */
 
-.main-contactanos{
+.main-contactanos {
     height: calc(80vh);
     display: flex;
     justify-content: center;
@@ -561,12 +612,14 @@ body {
     padding-top: 20px;
     color: #6930C3;
 }
-.contenedor-form{
+
+.contenedor-form {
     width: 50%;
     height: 60%;
 }
 
-input[type= "text"] , input[type = "email"]{
+input[type="text"],
+input[type="email"] {
     width: 48%;
     height: 40px;
     margin: 10px 5px;
@@ -579,7 +632,7 @@ input[type= "text"] , input[type = "email"]{
     font-size: 18px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     width: 100%;
     height: 40px;
     margin: 10px 0px;
@@ -592,7 +645,8 @@ input[type="submit"]{
     cursor: pointer;
     font-size: 18px;
 }
-textarea{
+
+textarea {
     padding: 15px;
     width: 100%;
     height: 200px;
@@ -604,59 +658,64 @@ textarea{
     font-size: 18px;
 }
 
-@media screen and (max-width: 1200px ) {
-    .contenedor-form{
+@media screen and (max-width: 1200px) {
+    .contenedor-form {
         width: 60%;
         height: 60%;
     }
 }
 
-@media screen and (max-width: 990px ) {
-    .contenedor-form{
+@media screen and (max-width: 990px) {
+    .contenedor-form {
         width: 75%;
         height: 60%;
     }
-    .main-contactanos p{
+
+    .main-contactanos p {
         padding: 0 50px;
     }
 }
 
-@media screen and (max-width: 790px ) {
-    .contenedor-form{
+@media screen and (max-width: 790px) {
+    .contenedor-form {
         width: 100%;
         height: 60%;
         margin: 0 20px;
     }
 }
 
-@media screen and (max-width: 690px ) {
-    .contenedor-form form :nth-child(1){
+@media screen and (max-width: 690px) {
+    .contenedor-form form :nth-child(1) {
         width: 90%;
         padding: 0;
         margin: 0 20px;
         margin-top: 10px;
     }
-    .contenedor-form form :nth-child(2){
+
+    .contenedor-form form :nth-child(2) {
         width: 90%;
         padding: 0;
         margin: 0 20px;
         margin-top: 10px;
     }
-    .contenedor-form form :nth-child(3){
+
+    .contenedor-form form :nth-child(3) {
         width: 90%;
         padding: 0;
         margin: 0 20px;
         margin-top: 10px;
     }
-    .contenedor-form form :nth-child(4){
+
+    .contenedor-form form :nth-child(4) {
         width: 90%;
         padding: 0;
         margin: 0 20px;
         margin-top: 10px;
     }
+
     .main-contactanos p {
         padding: 0 10;
-      }
+    }
 }
 
 
@@ -672,7 +731,7 @@ textarea{
 /* -----------------PREGUNTAS FRECUENTES---------------- */
 
 
-.contenedor-img-texto{
+.contenedor-img-texto {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -680,10 +739,12 @@ textarea{
     padding-top: 40px;
     margin-bottom: 60px;
 }
+
 .main-preguntas .contenedor-img-texto img {
     width: 20%;
 }
-.texto-preguntas{
+
+.texto-preguntas {
     width: 30%;
     padding: 40px;
     text-align: justify;
@@ -691,67 +752,75 @@ textarea{
     color: #6930C3;
 }
 
-.accordion{
+.accordion {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.accordion-item{
+.accordion-item {
     width: 80%;
     display: flex;
     margin: 10px;
-    
+
 }
 
 
-.accordion-button{
+.accordion-button {
     color: #6930C3;
     padding: 20px 30px;
     border: 1px solid #6930C3;
     width: 400px;
-    
+
 }
 
 
-@media screen and (max-width: 1000px){
-    .accordion-item{
+@media screen and (max-width: 1000px) {
+    .accordion-item {
         display: block;
     }
 }
 
-@media screen and (max-width: 850px){
-    .contenedor-img-texto{
+@media screen and (max-width: 850px) {
+    .contenedor-img-texto {
         display: flex;
         flex-direction: column;
     }
+
     .main-preguntas .contenedor-img-texto img {
         width: 50%;
     }
-    .texto-preguntas{
+
+    .texto-preguntas {
         width: 90%;
+    }
 }
-}
+
 @media screen and (max-width: 600px) {
-    .contenedor-preguntas{
+    .contenedor-preguntas {
         height: auto;
     }
-    .contenedor-img-texto img{
+
+    .contenedor-img-texto img {
         width: 70%;
         height: 35vh;
     }
-    .accordion{
+
+    .accordion {
         margin-bottom: 20px;
     }
-    .accordion-button{
+
+    .accordion-button {
         border: none;
         width: auto;
     }
-    .accordion-item{
+
+    .accordion-item {
         margin: 0px;
     }
-    .iconos a img{
+
+    .iconos a img {
         padding: 10px;
     }
 }
