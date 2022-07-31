@@ -108,7 +108,7 @@ body {
     justify-content: center;
     color: #ffffff;
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     padding-bottom: 50px;
@@ -395,14 +395,21 @@ body {
 /* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
 /* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
 /* ---------------------------SECCION SOBRE NOSOTROS--------------------------- */
-
+.contenedor-textos{
+    z-index: 1;
+}
 
 .main-sobrenos {
     /* height: calc(100vh - 150px); */
     background-color: black;
 }
 
-
+.carousel-control-next{
+    z-index: 2;
+}
+.carousel-control-prev{
+    z-index: 2;
+}
 .main-sobrenos .contenedor-imagenes div img {
     object-fit: cover;
     width: 100%;
