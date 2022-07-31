@@ -863,10 +863,17 @@ textarea {
 }
 
 .accordion-item {
+    color: #6930C3;
     width: 80%;
     display: flex;
     margin: 10px;
 
+}
+.accordion-body a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    color: #6930C3;
 }
 
 
