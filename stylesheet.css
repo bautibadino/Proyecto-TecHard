@@ -115,8 +115,8 @@ body {
 }
 
 .contenedor-textos h1 {
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: 700;
+    font-size: 45px;
     letter-spacing: 5px;
 }
 
@@ -501,7 +501,8 @@ body {
     object-fit: cover;
     width: 100%;
     /* height: calc(100vh - 150px); */
-    filter: blur(4px);
+    filter: blur(4px)
+    brightness(50%);
     position: sticky;
     background-color: black;
 }
