@@ -311,90 +311,11 @@ dl, ol, ul{
 
 
 
-@media screen and (max-width: 1250px) {
-    .contenedor-iconos {
-        justify-content: left;
-        padding-left: 20px;
-    }
 
-    .section2 {
-        height: auto;
-    }
 
-    .ofertas {
-        flex-wrap: wrap;
-    }
 
-    .card-ofertas {
-        width: 60%;
-
-    }
-
-    .contenedor-lista {
-        padding-left: 0px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .contenedor-header {
-        flex-direction: column-reverse;
-    }
-
-    .contenedor-lista {
-        padding-top: 15px;
-        width: 100%;
-        height: 40%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .contenedor-lista a {
-        font-weight: 400;
-        text-align: justify;
-    }
-
-    .contenedor-iconos {
-        justify-content: center;
-        padding-left: 0;
-        width: 100%;
-        height: 50%;
-    }
-
-    .contenedor-iconos img {
-        height: 40px;
-        padding-right: 0;
-    }
-
-    .section2 {
-        height: 80vh;
-    }
-
-    .ofertas {
-        width: 95%;
-    }
-}
 
 @media screen and (max-width: 800px) {
-    .contenedor-header {
-        justify-content: space-between;
-        flex-direction: row-reverse;
-    }
-
-    .contenedor-lista {
-
-        padding: 0;
-        width: 90%;
-        height: 100%;
-        /* align-items: center; */
-    }
-
-    .contenedor-iconos {
-        flex-direction: column;
-        width: 10%;
-        height: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
 
     .ofertas {
         display: flex;
@@ -419,10 +340,6 @@ dl, ol, ul{
         width: 60%;
     }
 
-    .iconos ul {
-        padding-left: 0px;
-        margin-bottom: 0px;
-    }
 }
 
 @media screen and (max-width: 560px) {

@@ -285,7 +285,7 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
       position: sticky;
       background-color: black; }
   .main-sobrenos .section2 {
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     background-color: #ffffff;
     color: #6930C3;
@@ -470,6 +470,7 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
     color: #6930C3;
     width: 80%;
     display: flex;
+    flex-direction: column;
     margin: 10px; }
     .main-preguntas .accordion .accordion-item .accordion-button {
       color: #6930C3;
@@ -481,3 +482,48 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
       color: black;
       font-weight: 600;
       color: #6930C3; }
+
+@media screen and (max-width: 900px) {
+  .main-index .section1 {
+    height: calc(100vh - 71px); }
+  .main-index .section2-productos {
+    width: 100%; }
+    .main-index .section2-productos .titulo-productos h2 {
+      font-size: 30px; }
+    .main-index .section2-productos .ofertas-productos {
+      flex-direction: column;
+      align-items: center;
+      width: 90%; }
+      .main-index .section2-productos .ofertas-productos .card-productos {
+        width: 60%;
+        justify-content: center;
+        align-items: center; } }
+
+@media screen and (max-width: 500px) {
+  .main-index .section2-productos {
+    width: 100%; }
+    .main-index .section2-productos .titulo-productos h2 {
+      font-size: 25px; }
+    .main-index .section2-productos .ofertas-productos {
+      flex-direction: column;
+      align-items: center;
+      width: 90%; }
+      .main-index .section2-productos .ofertas-productos .card-productos {
+        width: 90%;
+        justify-content: center;
+        align-items: center; } }
+
+@media screen and (max-width: 800px) {
+  .main-sobrenos .seccion1 .contenedor-textos p {
+    padding: 10px; } }
+
+@media screen and (max-width: 800px) and (max-width: 600px) {
+  .main-sobrenos .section2 {
+    height: 120vh; }
+    .main-sobrenos .section2 .contenedor-comentarios .items-comentarios iframe {
+      width: 400px;
+      height: 400px; } }
+
+@media screen and (max-width: 800px) and (max-width: 400px) {
+  .main-sobrenos .section2 .contenedor-comentarios .items-comentarios iframe {
+    width: 290px; } }
