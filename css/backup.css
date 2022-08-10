@@ -660,7 +660,7 @@ dl, ol, ul{
 
 input[type="text"],
 input[type="email"] {
-    width: 48%;
+    width: 50%;
     height: 40px;
     margin: 10px 5px;
     border: 1px solid white;

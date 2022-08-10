@@ -55,48 +55,133 @@
 
 // --------- SOBRE NOSOTROS ---------//
 
+@media screen and (max-width: 800px) {
+  .main-sobrenos {
+    .seccion1 {
+      .contenedor-textos {
+        p {
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .main-sobrenos {
+      .section2 {
+        height: 120vh;
+        .contenedor-comentarios {
+          .items-comentarios {
+            iframe {
+              width: 400px;
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .main-sobrenos {
+      .section2 {
+        .contenedor-comentarios {
+          .items-comentarios {
+            iframe {
+              width: 290px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ----------- FIN SOBRE NOSOTROS -----------//
+
+// --------- PREGUNTAS FRECUENTES ---------- //
+
+@media screen and (max-width: 850px) {
+  .main-preguntas {
+    .contenedor-img-texto {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: 50%;
+      }
+      .texto-preguntas {
+        width: 90%;
+      }
+    }
+    .accordion {
+      .accordion-item {
+        display: block;
+
+        .accordion-header {
+          .accordion-button {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+//--------------- FIN PREGUNTAS -------------//
+
+//------------CONTACTO-----------//
 
 @media screen and (max-width: 800px) {
-    .main-sobrenos {
-        .seccion1{
-            .contenedor-textos{
-                p{
-                    padding: 10px;
-                }
+    .main-contactanos{
+        p{
+            padding:20px;
+            text-align: justify;
+        }
+    .contenedor-form {
+    form {
+      input[type="text"]{
+        width: 80%;
+      }
+      input[type="email"]{
+        width: 80%;
+      }
 
+      input[type="submit"] {
+        width: 80%;
+      }
+
+      textarea {
+        width: 80%;
+      }
+    }
+  }
+}
+}
+
+
+
+//---------PRODUCTOS----------//
+
+@media screen and (max-width:1200px) {
+
+
+    .main-productos{
+    .section2-productos{
+        .ofertas-productos {
+            .card-productos {
+                width: 40%;
             }
         }
     }
+}}
 
-@media screen and (max-width: 600px) {
-  .main-sobrenos {
-
-    .section2 {
-        height: 120vh;
-      .contenedor-comentarios {
-        .items-comentarios {
-          iframe {
-            width: 400px;
-            height: 400px;
-          }
+@media screen and (max-width:580px) {
+    .main-productos{
+        .section2-productos{
+            .ofertas-productos {
+                .card-productos {
+                    width: 80%;
+                }
+            }
         }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .main-sobrenos {
-    .section2 {
-      .contenedor-comentarios {
-
-        .items-comentarios {
-          iframe {
-            width: 290px;
-          }
-        }
-      }
-    }
-  }
-}
-}
+    }}

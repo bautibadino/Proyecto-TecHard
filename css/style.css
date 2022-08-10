@@ -91,6 +91,7 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
     .main-index .section2-productos .ofertas-productos {
       display: flex;
       flex-wrap: wrap;
+      width: 80%;
       justify-content: center; }
       .main-index .section2-productos .ofertas-productos .card-productos {
         width: 25%;
@@ -331,7 +332,7 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
   .main-productos .section2-productos .ofertas-productos {
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     justify-content: center; }
     .main-productos .section2-productos .ofertas-productos .card-productos {
       width: 23%;
@@ -343,7 +344,7 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
       border-radius: 51px 7px 7px 7px;
       border: 0.5px solid rgba(0, 0, 0, 0.226); }
       .main-productos .section2-productos .ofertas-productos .card-productos .imagen-card img {
-        width: 90%;
+        width: 100%;
         border-bottom: 0.5px solid rgba(0, 0, 0, 0.226); }
       .main-productos .section2-productos .ofertas-productos .card-productos .textos-card h3 {
         font-size: 22px;
@@ -408,42 +409,52 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
   .main-contactanos p {
     padding-top: 20px; }
   .main-contactanos .contenedor-form {
-    width: 50%;
-    height: 60%; }
-    .main-contactanos .contenedor-form input[type="text"],
-    .main-contactanos .contenedor-form input[type="email"] {
-      width: 48%;
-      height: 40px;
-      margin: 10px 5px;
-      border: 1px solid white;
-      background-color: #6930c3;
-      padding: 15px;
-      color: white;
-      border-radius: 4px;
-      text-align: center;
-      font-size: 18px; }
-    .main-contactanos .contenedor-form input[type="submit"] {
-      width: 100%;
-      height: 40px;
-      margin: 10px 0px;
-      background-color: #6930c3;
-      color: #ffffff;
-      border: 1px solid white;
-      font-size: 15px;
-      letter-spacing: 2px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 18px; }
-    .main-contactanos .contenedor-form textarea {
-      padding: 15px;
-      width: 100%;
-      height: 200px;
-      border: 1px solid white;
-      background-color: #6930c3;
-      color: white;
-      border-radius: 4px;
-      text-align: center;
-      font-size: 18px; }
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .main-contactanos .contenedor-form form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .main-contactanos .contenedor-form form input[type="text"],
+      .main-contactanos .contenedor-form form input[type="email"] {
+        width: 50%;
+        height: 40px;
+        margin: 10px 3px;
+        border: 1px solid white;
+        background-color: #6930c3;
+        padding: 15px;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 18px; }
+      .main-contactanos .contenedor-form form input[type="submit"] {
+        width: 50%;
+        height: 40px;
+        margin: 10px 0px;
+        background-color: #6930c3;
+        color: #ffffff;
+        border: 1px solid white;
+        font-size: 15px;
+        letter-spacing: 2px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 18px; }
+      .main-contactanos .contenedor-form form textarea {
+        padding: 15px;
+        width: 50%;
+        height: 200px;
+        border: 1px solid white;
+        background-color: #6930c3;
+        color: white;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 18px; }
 
 .main-preguntas .contenedor-img-texto {
   display: flex;
@@ -527,3 +538,37 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
 @media screen and (max-width: 800px) and (max-width: 400px) {
   .main-sobrenos .section2 .contenedor-comentarios .items-comentarios iframe {
     width: 290px; } }
+
+@media screen and (max-width: 850px) {
+  .main-preguntas .contenedor-img-texto {
+    display: flex;
+    flex-direction: column; }
+    .main-preguntas .contenedor-img-texto img {
+      width: 50%; }
+    .main-preguntas .contenedor-img-texto .texto-preguntas {
+      width: 90%; }
+  .main-preguntas .accordion .accordion-item {
+    display: block; }
+    .main-preguntas .accordion .accordion-item .accordion-header .accordion-button {
+      width: auto; } }
+
+@media screen and (max-width: 800px) {
+  .main-contactanos p {
+    padding: 20px;
+    text-align: justify; }
+  .main-contactanos .contenedor-form form input[type="text"] {
+    width: 80%; }
+  .main-contactanos .contenedor-form form input[type="email"] {
+    width: 80%; }
+  .main-contactanos .contenedor-form form input[type="submit"] {
+    width: 80%; }
+  .main-contactanos .contenedor-form form textarea {
+    width: 80%; } }
+
+@media screen and (max-width: 1200px) {
+  .main-productos .section2-productos .ofertas-productos .card-productos {
+    width: 40%; } }
+
+@media screen and (max-width: 580px) {
+  .main-productos .section2-productos .ofertas-productos .card-productos {
+    width: 80%; } }

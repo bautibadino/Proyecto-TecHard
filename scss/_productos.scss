@@ -21,7 +21,7 @@
     .ofertas-productos {
       display: flex;
       flex-wrap: wrap;
-      width: 80%;
+      width: 90%;
       justify-content: center;
 
       .card-productos {
@@ -36,7 +36,7 @@
 
         .imagen-card {
           img {
-            width: 90%;
+            width: 100%;
             border-bottom: 0.5px solid rgba(0, 0, 0, 0.226);
           }
         }
