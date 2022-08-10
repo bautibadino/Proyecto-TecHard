@@ -26,9 +26,7 @@ body {
 
 
 /* COMIENZO DEL HEADER */
-.nav-item {
-    padding: 20px;
-}
+
 
 .nav-link {
     font-size: 16px;
@@ -43,7 +41,7 @@ body {
 
 .nav-item {
     color: #6930C3;
-    /* font-size: 6rem; */
+    padding: 20px;
     display: inline-block;
     position: relative;
 }
@@ -72,9 +70,10 @@ body {
 
 
 
-
-
 /* FIN HEADER */
+
+
+
 
 /* COMIENZO MAIN */
 .main-index {
@@ -193,7 +192,12 @@ body {
     bottom: 0px;
 }
 
-
+ol , ul {
+    padding: 0 ;
+}
+dl, ol, ul{
+    margin-bottom: 0;
+}
 
 
 
@@ -561,7 +565,6 @@ body {
 /* ------------------PAGINA PRODUCTOS-------------------- */
 .section2-productos {
     background-color: #ffffff;
-
     width: 100%;
     display: flex;
     color: #6930C3;
@@ -580,7 +583,6 @@ body {
 
 .ofertas-productos {
     display: flex;
-
     flex-wrap: wrap;
     width: 80%;
     justify-content: center;
@@ -901,7 +903,6 @@ textarea {
     padding: 20px 30px;
     border: 1px solid #6930C3;
     width: 400px;
-
 }
 
 
