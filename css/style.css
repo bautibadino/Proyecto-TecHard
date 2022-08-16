@@ -36,6 +36,12 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left; }
 
+.main-index .section2-productos .ofertas-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+
 .main-index {
   width: 100%;
   background-color: black; }
@@ -89,18 +95,17 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
       font-size: 40px;
       border-bottom: 0.5px solid #6930c3; }
     .main-index .section2-productos .ofertas-productos {
-      display: flex;
-      flex-wrap: wrap;
-      width: 80%;
-      justify-content: center; }
+      width: 80%; }
       .main-index .section2-productos .ofertas-productos .card-productos {
         width: 25%;
         margin: 25px;
         display: flex;
         flex-direction: column;
+        background-color: #ffffff;
         box-shadow: -2px -3px 14px 2px rgba(0, 0, 0, 0.142);
         border-radius: 51px 7px 7px 7px;
-        border: 0.5px solid rgba(0, 0, 0, 0.226); }
+        border: 0.5px solid rgba(0, 0, 0, 0.226);
+        color: #6930c3; }
         .main-index .section2-productos .ofertas-productos .card-productos .imagen-card img {
           width: 100%;
           border-bottom: 0.5px solid rgba(0, 0, 0, 0.226); }
@@ -286,13 +291,13 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
       position: sticky;
       background-color: black; }
   .main-sobrenos .section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100vh;
     width: 100%;
     background-color: #ffffff;
-    color: #6930C3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
+    color: #6930C3; }
     .main-sobrenos .section2 .contenedor-mapa {
       width: 100%;
       overflow: hidden;
@@ -407,7 +412,8 @@ header nav .container-fluid .navbar-nav .nav-item:hover:after {
     font-weight: 700;
     border-bottom: 0.5px solid #6930c3; }
   .main-contactanos p {
-    padding-top: 20px; }
+    padding-top: 20px;
+    font-size: 20px; }
   .main-contactanos .contenedor-form {
     width: 100%;
     height: 80%;

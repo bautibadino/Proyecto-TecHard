@@ -1,3 +1,5 @@
+@import "bases/mixins";
+
 .main-sobrenos{
     background-color: black;
     .seccion1{
@@ -36,13 +38,11 @@
         }
     }
     .section2{
+        @include flex-section2 (flex , column , space-around);
         height: 100vh;
         width: 100%;
         background-color: #ffffff;
         color: #6930C3;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
 
         .contenedor-mapa{
             width: 100%;
