@@ -38,7 +38,7 @@
         }
     }
     .section2{
-        @include flex-section2 (flex , column , space-around);
+        @include flex-section2 (flex , column , space-around, center);
         height: 100vh;
         width: 100%;
         background-color: #ffffff;

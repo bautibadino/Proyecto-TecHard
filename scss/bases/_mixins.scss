@@ -1,7 +1,8 @@
 
 
-@mixin flex-section2 ($flex, $column , $space){
+@mixin flex-section2 ($flex, $column , $space, $center){
     display: $flex;
     flex-direction: $column;
     justify-content: $space;
+    align-items: $center;
 }

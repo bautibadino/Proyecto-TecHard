@@ -88,6 +88,7 @@
         border-radius: 51px 7px 7px 7px;
         border: map-get($cards, border-card);
         color: map-get($cards, color-texto);
+        
         .imagen-card {
           img {
             width: 100%;
